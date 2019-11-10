@@ -24,7 +24,7 @@ final class AvailableScheduleCell: UICollectionViewCell {
         backgroundColor = UIColor(red:0.98, green:0.98, blue:0.99, alpha:1.00)
         let timeLabel = UILabel()
         timeLabel.translatesAutoresizingMaskIntoConstraints = false
-        timeLabel.font = UIFont.systemFont(ofSize: 20)
+        timeLabel.font = UIFont.medium(ofSize: 20)
         contentView.addSubview(timeLabel)
         NSLayoutConstraint.activate([
             timeLabel.topAnchor.constraint(equalTo: contentView.topAnchor),

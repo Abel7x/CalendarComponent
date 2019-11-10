@@ -64,8 +64,7 @@ class MonthHeaderView: UIView {
             monthNameLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
         ])
         monthNameLabel.textAlignment = .center
-//        monthNameLabel.text = "ASDASD"
-        
+        monthNameLabel.font = UIFont.bold(ofSize: 16)
         self.monthNameLabel = monthNameLabel
         
         let leftArrowButton = UIButton()
@@ -73,12 +72,12 @@ class MonthHeaderView: UIView {
         leftArrowButton.addTarget(self, action: #selector(handleLeftAction(sender:)), for: .touchUpInside)
         addSubview(leftArrowButton)
         NSLayoutConstraint.activate([
-            leftArrowButton.trailingAnchor.constraint(equalTo: monthNameLabel.leadingAnchor),
+            leftArrowButton.trailingAnchor.constraint(equalTo: monthNameLabel.leadingAnchor, constant: -10),
             leftArrowButton.centerYAnchor.constraint(equalTo: monthNameLabel.centerYAnchor),
             leftArrowButton.widthAnchor.constraint(equalToConstant: 20)
         ])
         leftArrowButton.setTitleColor(.black, for: .normal)
-        leftArrowButton.setTitle("<", for: .normal)
+        leftArrowButton.setImage(UIImage(named: "left arrow"), for: .normal)
         self.leftArrowButton = leftArrowButton
         
         let rightArrowButton = UIButton()
@@ -86,13 +85,13 @@ class MonthHeaderView: UIView {
         rightArrowButton.addTarget(self, action: #selector(handleRightAction(sender:)), for: .touchUpInside)
         addSubview(rightArrowButton)
         NSLayoutConstraint.activate([
-            rightArrowButton.leadingAnchor.constraint(equalTo: monthNameLabel.trailingAnchor),
+            rightArrowButton.leadingAnchor.constraint(equalTo: monthNameLabel.trailingAnchor, constant: 10),
             rightArrowButton.centerYAnchor.constraint(equalTo: monthNameLabel.centerYAnchor),
             rightArrowButton.widthAnchor.constraint(equalToConstant: 20),
             rightArrowButton.heightAnchor.constraint(equalTo: rightArrowButton.widthAnchor)
         ])
         rightArrowButton.setTitleColor(.black, for: .normal)
-        rightArrowButton.setTitle(">", for: .normal)
+        rightArrowButton.setImage(UIImage(named: "right arrow"), for: .normal)
         self.rightArrowButton = rightArrowButton
     }
     

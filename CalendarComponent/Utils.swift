@@ -63,3 +63,47 @@ extension UITableView {
         return cell
     }
 }
+
+extension UIFont {
+    
+    class func medium(ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "GothamPro-Medium", size: ofSize) ?? systemFont(ofSize: ofSize)
+    }
+    
+    class func mediumItalic(ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "GothamPro-MediumItalic", size: ofSize) ?? systemFont(ofSize: ofSize)
+    }
+    
+    class func bold(ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "MyFontBold", size: ofSize) ?? systemFont(ofSize: ofSize)
+    }
+    
+    class func boldItalic(ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "GothamPro-BoldItalic", size: ofSize) ?? systemFont(ofSize: ofSize)
+    }
+    
+    class func black(ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "GothamPro-Black", size: ofSize) ?? systemFont(ofSize: ofSize)
+    }
+    
+    class func blackItalic(ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "GothamPro-BlackItalic", size: ofSize) ?? systemFont(ofSize: ofSize)
+    }
+    
+    class func light(ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "GothamPro-Light", size: ofSize) ?? systemFont(ofSize: ofSize)
+    }
+    
+    class func lightItalic(ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "GothamProL-LightItalic", size: ofSize) ?? systemFont(ofSize: ofSize)
+    }
+    
+    class func italic(ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "GothamPro-Italic", size: ofSize) ?? systemFont(ofSize: ofSize)
+    }
+    
+    class func regular(ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "GothamPro", size: ofSize) ?? systemFont(ofSize: ofSize)
+    }
+}
+

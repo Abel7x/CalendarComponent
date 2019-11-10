@@ -31,6 +31,7 @@ class SelectedScheduleCollectionViewCell: UICollectionViewCell {
         label.font = UIFont.systemFont(ofSize: 20)
         label.textColor = .white
         label.text = "5"
+        label.font = UIFont.medium(ofSize: 20)
         return label
     }()
     
@@ -40,6 +41,7 @@ class SelectedScheduleCollectionViewCell: UICollectionViewCell {
         label.font = UIFont.systemFont(ofSize: 10)
         label.textColor = .white
         label.text = "Aug"
+        label.font = UIFont.medium(ofSize: 10)
         return label
     }()
     
@@ -48,13 +50,14 @@ class SelectedScheduleCollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 20)
         label.text = "8:00"
+        label.font = UIFont.medium(ofSize: 20)
         return label
     }()
     
     private lazy var deleteButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("X", for: .normal)
+        button.setImage(UIImage(named: "cross"), for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         button.setTitleColor(.black, for: .normal)
 //        button.addTarget(self, action: #selector(deselect(sender:)), for: .touchUpInside)
@@ -83,7 +86,7 @@ class SelectedScheduleCollectionViewCell: UICollectionViewCell {
             monthNameLabel.centerXAnchor.constraint(equalTo: dayNumberView.centerXAnchor),
             monthNameLabel.topAnchor.constraint(equalTo: dayNumberView.topAnchor, constant: 7),
             dayNumberLabel.centerXAnchor.constraint(equalTo: dayNumberView.centerXAnchor),
-            dayNumberLabel.topAnchor.constraint(equalTo: monthNameLabel.bottomAnchor, constant: 0),
+            dayNumberLabel.topAnchor.constraint(equalTo: monthNameLabel.bottomAnchor, constant: 4),
             scheduleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 14),
             scheduleLabel.leadingAnchor.constraint(equalTo: dayNumberView.trailingAnchor, constant: 8.5),
             deleteButton.leadingAnchor.constraint(equalTo: scheduleLabel.trailingAnchor, constant: 4),

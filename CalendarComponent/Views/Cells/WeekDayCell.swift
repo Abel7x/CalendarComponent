@@ -81,6 +81,7 @@ final class WeekDayCell: UITableViewCell {
         heightConstraint.isActive = true
         let dayNameLabel = UILabel()
         dayNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        dayNameLabel.font = UIFont.medium(ofSize: 24)
         headerView.addSubview(dayNameLabel)
         NSLayoutConstraint.activate([
             dayNameLabel.leftAnchor.constraint(equalTo: headerView.leftAnchor, constant: 13),
@@ -88,7 +89,6 @@ final class WeekDayCell: UITableViewCell {
         ])
         dayNameLabel.numberOfLines = 1
         dayNameLabel.text = "Monday"
-        dayNameLabel.font = UIFont.systemFont(ofSize: 24)
         dayNameLabel.textColor = UIColor(red:0.38, green:0.38, blue:0.38, alpha:1.00)
         self.dayNameLabel = dayNameLabel
         
@@ -116,7 +116,7 @@ final class WeekDayCell: UITableViewCell {
             monthNameLabel.topAnchor.constraint(equalTo: numberOfDayView.topAnchor, constant: 7)
         ])
         monthNameLabel.text = "Aug"
-        monthNameLabel.font = UIFont.systemFont(ofSize: 14)
+        monthNameLabel.font = UIFont.medium(ofSize: 14)
         self.monthNameLabel = monthNameLabel
         
         let dayNumberLabel = UILabel()
@@ -124,10 +124,10 @@ final class WeekDayCell: UITableViewCell {
         headerView.addSubview(dayNumberLabel)
         NSLayoutConstraint.activate([
             dayNumberLabel.centerXAnchor.constraint(equalTo: numberOfDayView.centerXAnchor),
-            dayNumberLabel.topAnchor.constraint(equalTo: monthNameLabel.bottomAnchor)
+            dayNumberLabel.topAnchor.constraint(equalTo: monthNameLabel.bottomAnchor, constant: 4)
         ])
         dayNumberLabel.text = "5"
-        dayNumberLabel.font = UIFont.systemFont(ofSize: 32)
+        dayNumberLabel.font = UIFont.medium(ofSize: 32)
         self.dayNumberLabel = dayNumberLabel
         
         let scheduleLayout = UICollectionViewFlowLayout()

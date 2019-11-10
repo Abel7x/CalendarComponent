@@ -21,6 +21,16 @@
 		61160BD223749C4C00A15123 /* SelectedSchedulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61160BD123749C4C00A15123 /* SelectedSchedulesView.swift */; };
 		61160BD52374A13300A15123 /* SelectedScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61160BD42374A13300A15123 /* SelectedScheduleCollectionViewCell.swift */; };
 		61A7F94C23788FC400B81606 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7F94B23788FC400B81606 /* CalendarView.swift */; };
+		61A7F95923789A6700B81606 /* GothamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A7F94F23789A6700B81606 /* GothamPro-Bold.ttf */; };
+		61A7F95A23789A6700B81606 /* GothamPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A7F95023789A6700B81606 /* GothamPro-LightItalic.ttf */; };
+		61A7F95B23789A6700B81606 /* GothamPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A7F95123789A6700B81606 /* GothamPro.ttf */; };
+		61A7F95C23789A6700B81606 /* GothamPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A7F95223789A6700B81606 /* GothamPro-BlackItalic.ttf */; };
+		61A7F95D23789A6700B81606 /* GothamPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A7F95323789A6700B81606 /* GothamPro-Black.ttf */; };
+		61A7F95E23789A6700B81606 /* GothamPro-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A7F95423789A6700B81606 /* GothamPro-MediumItalic.ttf */; };
+		61A7F95F23789A6700B81606 /* GothamPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A7F95523789A6700B81606 /* GothamPro-Italic.ttf */; };
+		61A7F96023789A6700B81606 /* GothamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A7F95623789A6700B81606 /* GothamPro-Medium.ttf */; };
+		61A7F96123789A6700B81606 /* GothamPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A7F95723789A6700B81606 /* GothamPro-Light.ttf */; };
+		61A7F96223789A6700B81606 /* GothamPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61A7F95823789A6700B81606 /* GothamPro-BoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +50,16 @@
 		61160BD123749C4C00A15123 /* SelectedSchedulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSchedulesView.swift; sourceTree = "<group>"; };
 		61160BD42374A13300A15123 /* SelectedScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 		61A7F94B23788FC400B81606 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		61A7F94F23789A6700B81606 /* GothamPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Bold.ttf"; sourceTree = "<group>"; };
+		61A7F95023789A6700B81606 /* GothamPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		61A7F95123789A6700B81606 /* GothamPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamPro.ttf; sourceTree = "<group>"; };
+		61A7F95223789A6700B81606 /* GothamPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		61A7F95323789A6700B81606 /* GothamPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Black.ttf"; sourceTree = "<group>"; };
+		61A7F95423789A6700B81606 /* GothamPro-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-MediumItalic.ttf"; sourceTree = "<group>"; };
+		61A7F95523789A6700B81606 /* GothamPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Italic.ttf"; sourceTree = "<group>"; };
+		61A7F95623789A6700B81606 /* GothamPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Medium.ttf"; sourceTree = "<group>"; };
+		61A7F95723789A6700B81606 /* GothamPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Light.ttf"; sourceTree = "<group>"; };
+		61A7F95823789A6700B81606 /* GothamPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +92,7 @@
 		61160BAD237236D800A15123 /* CalendarComponent */ = {
 			isa = PBXGroup;
 			children = (
+				61A7F94D23789A2200B81606 /* Resources */,
 				61160BC72372378000A15123 /* Views */,
 				61160BC22372371000A15123 /* ViewControllers */,
 				61160BAE237236D800A15123 /* AppDelegate.swift */,
@@ -113,6 +134,31 @@
 				61160BD42374A13300A15123 /* SelectedScheduleCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		61A7F94D23789A2200B81606 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61A7F94E23789A3700B81606 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		61A7F94E23789A3700B81606 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				61A7F95323789A6700B81606 /* GothamPro-Black.ttf */,
+				61A7F95223789A6700B81606 /* GothamPro-BlackItalic.ttf */,
+				61A7F94F23789A6700B81606 /* GothamPro-Bold.ttf */,
+				61A7F95823789A6700B81606 /* GothamPro-BoldItalic.ttf */,
+				61A7F95523789A6700B81606 /* GothamPro-Italic.ttf */,
+				61A7F95723789A6700B81606 /* GothamPro-Light.ttf */,
+				61A7F95023789A6700B81606 /* GothamPro-LightItalic.ttf */,
+				61A7F95623789A6700B81606 /* GothamPro-Medium.ttf */,
+				61A7F95423789A6700B81606 /* GothamPro-MediumItalic.ttf */,
+				61A7F95123789A6700B81606 /* GothamPro.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +219,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A7F96023789A6700B81606 /* GothamPro-Medium.ttf in Resources */,
 				61160BBB237236DC00A15123 /* LaunchScreen.storyboard in Resources */,
+				61A7F95E23789A6700B81606 /* GothamPro-MediumItalic.ttf in Resources */,
+				61A7F95923789A6700B81606 /* GothamPro-Bold.ttf in Resources */,
+				61A7F95D23789A6700B81606 /* GothamPro-Black.ttf in Resources */,
+				61A7F95F23789A6700B81606 /* GothamPro-Italic.ttf in Resources */,
+				61A7F95B23789A6700B81606 /* GothamPro.ttf in Resources */,
 				61160BB8237236DC00A15123 /* Assets.xcassets in Resources */,
+				61A7F96223789A6700B81606 /* GothamPro-BoldItalic.ttf in Resources */,
+				61A7F95C23789A6700B81606 /* GothamPro-BlackItalic.ttf in Resources */,
+				61A7F96123789A6700B81606 /* GothamPro-Light.ttf in Resources */,
+				61A7F95A23789A6700B81606 /* GothamPro-LightItalic.ttf in Resources */,
 				61160BB6237236D800A15123 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
