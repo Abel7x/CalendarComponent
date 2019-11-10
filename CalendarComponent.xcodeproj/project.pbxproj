@@ -13,6 +13,14 @@
 		61160BB6237236D800A15123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61160BB4237236D800A15123 /* Main.storyboard */; };
 		61160BB8237236DC00A15123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61160BB7237236DC00A15123 /* Assets.xcassets */; };
 		61160BBB237236DC00A15123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61160BB9237236DC00A15123 /* LaunchScreen.storyboard */; };
+		61160BC42372372B00A15123 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61160BC32372372B00A15123 /* Utils.swift */; };
+		61160BC62372376600A15123 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61160BC52372376600A15123 /* CalendarViewController.swift */; };
+		61160BC92372379E00A15123 /* WeekDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61160BC82372379E00A15123 /* WeekDayCell.swift */; };
+		61160BCB237237BF00A15123 /* AvailableScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61160BCA237237BF00A15123 /* AvailableScheduleCell.swift */; };
+		61160BCD2372382500A15123 /* MonthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61160BCC2372382500A15123 /* MonthHeaderView.swift */; };
+		61160BD0237336E100A15123 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61160BCF237336E100A15123 /* ScheduleModel.swift */; };
+		61160BD223749C4C00A15123 /* SelectedSchedulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61160BD123749C4C00A15123 /* SelectedSchedulesView.swift */; };
+		61160BD52374A13300A15123 /* SelectedScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61160BD42374A13300A15123 /* SelectedScheduleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		61160BB7237236DC00A15123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61160BBA237236DC00A15123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61160BBC237236DC00A15123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61160BC32372372B00A15123 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		61160BC52372376600A15123 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		61160BC82372379E00A15123 /* WeekDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayCell.swift; sourceTree = "<group>"; };
+		61160BCA237237BF00A15123 /* AvailableScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableScheduleCell.swift; sourceTree = "<group>"; };
+		61160BCC2372382500A15123 /* MonthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthHeaderView.swift; sourceTree = "<group>"; };
+		61160BCF237336E100A15123 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
+		61160BD123749C4C00A15123 /* SelectedSchedulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSchedulesView.swift; sourceTree = "<group>"; };
+		61160BD42374A13300A15123 /* SelectedScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,9 @@
 		61160BAD237236D800A15123 /* CalendarComponent */ = {
 			isa = PBXGroup;
 			children = (
+				61160BCE2373332A00A15123 /* Models */,
+				61160BC72372378000A15123 /* Views */,
+				61160BC22372371000A15123 /* ViewControllers */,
 				61160BAE237236D800A15123 /* AppDelegate.swift */,
 				61160BB0237236D800A15123 /* SceneDelegate.swift */,
 				61160BB2237236D800A15123 /* ViewController.swift */,
@@ -63,8 +82,45 @@
 				61160BB7237236DC00A15123 /* Assets.xcassets */,
 				61160BB9237236DC00A15123 /* LaunchScreen.storyboard */,
 				61160BBC237236DC00A15123 /* Info.plist */,
+				61160BC32372372B00A15123 /* Utils.swift */,
 			);
 			path = CalendarComponent;
+			sourceTree = "<group>";
+		};
+		61160BC22372371000A15123 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				61160BC52372376600A15123 /* CalendarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		61160BC72372378000A15123 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61160BD32374A11900A15123 /* Cells */,
+				61160BCC2372382500A15123 /* MonthHeaderView.swift */,
+				61160BD123749C4C00A15123 /* SelectedSchedulesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61160BCE2373332A00A15123 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61160BCF237336E100A15123 /* ScheduleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61160BD32374A11900A15123 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				61160BC82372379E00A15123 /* WeekDayCell.swift */,
+				61160BCA237237BF00A15123 /* AvailableScheduleCell.swift */,
+				61160BD42374A13300A15123 /* SelectedScheduleCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61160BCB237237BF00A15123 /* AvailableScheduleCell.swift in Sources */,
+				61160BC62372376600A15123 /* CalendarViewController.swift in Sources */,
+				61160BCD2372382500A15123 /* MonthHeaderView.swift in Sources */,
+				61160BD52374A13300A15123 /* SelectedScheduleCollectionViewCell.swift in Sources */,
 				61160BB3237236D800A15123 /* ViewController.swift in Sources */,
+				61160BC92372379E00A15123 /* WeekDayCell.swift in Sources */,
 				61160BAF237236D800A15123 /* AppDelegate.swift in Sources */,
+				61160BD223749C4C00A15123 /* SelectedSchedulesView.swift in Sources */,
 				61160BB1237236D800A15123 /* SceneDelegate.swift in Sources */,
+				61160BD0237336E100A15123 /* ScheduleModel.swift in Sources */,
+				61160BC42372372B00A15123 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
