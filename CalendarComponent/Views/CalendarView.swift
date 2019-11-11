@@ -9,18 +9,24 @@
 import UIKit
 
 protocol CalendarViewDelegate: AnyObject {
-    
+    func calendarView(_ calendarView: CalendarView, didSelectDate date: Date)
+    func calendarView(_ calendarView: CalendarView, didDeselectDate date: Date)
 }
 
-class CalendarView: UIView {
+final class CalendarView: UIView {
     
-    private weak var delegate: CalendarViewDelegate?
+    weak var delegate: CalendarViewDelegate?
     private let formatter = DateFormatter()
     private var selectedSchedules: Set<Date> = [] {
         didSet {
             selectedView.reloadData()
         }
     }
+    
+    var selectedDates: Set<Date> {
+        return selectedSchedules
+    }
+    
     private let calendar = Calendar.current
     private lazy var todayDate: Date = {
         guard var date = calendar.date(bySetting: .weekday, value: 1, of: Date()) else { return Date() }
@@ -143,10 +149,12 @@ extension CalendarView: MonthHeaderViewDelegate {
 extension CalendarView: WeekDayCellDelegate {
     func weekDayCell(cell: WeekDayCell, didSelectSchedule schedule: Date) {
         selectedSchedules.insert(schedule)
+        delegate?.calendarView(self, didSelectDate: schedule)
     }
     
     func weekDayCell(cell: WeekDayCell, didDeselectSchedule schedule: Date) {
         if selectedSchedules.contains(schedule) {
+            delegate?.calendarView(self, didDeselectDate: schedule)
             selectedSchedules.remove(schedule)
         }
     }
